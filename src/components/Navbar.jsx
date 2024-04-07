@@ -21,12 +21,14 @@ const Navbar = () => {
   return (
     <header className="text-gray-600 bg-white fixed inset-x-0 top-0 z-50 shadow-lg">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <Link to="/">
-            <span className="text-xl">Gadget Store</span>
-          </Link>
-        </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <Link
+          to="/"
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <span className="text-xl">Gadget Store</span>
+        </Link>
+
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center justify-center">
           {navItems.map((item) => (
             <Link
               to={item.url}

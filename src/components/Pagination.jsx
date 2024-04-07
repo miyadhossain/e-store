@@ -7,6 +7,7 @@ function ProductPagination({ count, page, handleChange }) {
       count={count}
       page={page}
       onChange={handleChange}
+      size="small"
     />
   );
 }
