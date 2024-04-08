@@ -15,6 +15,8 @@ const ProductCard = ({ product }) => {
         </h5>
 
         <p className="font-normal mb-3 text-gray-400">{product?.description}</p>
+
+        {/* <button>Add to Cart</button> */}
       </div>
     </div>
   );
