@@ -1,6 +1,7 @@
 import featuredImage from "../assets/featured.jpg";
 import girlImage from "../assets/girl.jpg";
 import iphoneImage from "../assets/iphone.jpg";
+import AppButton from "./AppButton";
 
 const BannersSection = () => {
   return (
@@ -20,9 +21,7 @@ const BannersSection = () => {
             ornare vestibulum mollis. Nam vitae augue purus. Integer ac accumsan
             nunc.
           </p>
-          <button className="bg-primary text-white rounded-md px-2 lg:px-10 py-2 lg:py-3 mt-5 hover:bg-primary/70">
-            Grab the Offer
-          </button>
+          <AppButton text="Grab the Offer" />
         </div>
       </div>
       <div className="flex flex-col md:flex-row lg:flex-col gap-5 w-full lg:w-1/3">

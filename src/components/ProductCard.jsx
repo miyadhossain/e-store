@@ -10,13 +10,17 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className="p-5">
-        <h5 className="font-bold text-2xl tracking-tight mb-2 text-white">
+        <h5 className="font-bold text-xl tracking-tight mb-2 text-white line-clamp-1">
           {product?.title}
         </h5>
 
-        <p className="font-normal mb-3 text-gray-400">{product?.description}</p>
+        <p className="font-semibold text-lg mb-3 text-gray-400">
+          ${product?.price}
+        </p>
 
-        {/* <button>Add to Cart</button> */}
+        <button className="bg-white rounded-md px-4 py-2 font-semibold">
+          Add to Cart
+        </button>
       </div>
     </div>
   );
