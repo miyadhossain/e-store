@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import BounceLoader from "react-spinners/BounceLoader";
 import { getAllProducts } from "../api";
 import ProductPagination from "../components/Pagination";
+import ProductCard from "../components/ProductCard";
 
 const Products = () => {
   const perPage = 12;
@@ -19,6 +20,10 @@ const Products = () => {
 
   const handleChange = (event, value) => {
     setPage(value);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const count = Math.ceil(products?.total / products?.limit);
@@ -30,7 +35,7 @@ const Products = () => {
   if (isLoading)
     return (
       <div className="h-screen flex justify-center items-center">
-        <BounceLoader color="#36d7b7" />
+        <BounceLoader color="#0FBACE" />
       </div>
     );
   return (
@@ -39,28 +44,7 @@ const Products = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {products.products?.length > 0
           ? products?.products?.map((product) => (
-              <div
-                key={product?.id}
-                className="shadow-md border rounded-lg max-w-sm bg-gray-800 border-gray-400"
-              >
-                <div className="block relative h-48 rounded overflow-hidden">
-                  <img
-                    alt="E-commerce thumbnail image"
-                    className="object-center w-full h-full block rounded-lg"
-                    src={product?.thumbnail}
-                  />
-                </div>
-
-                <div className="p-5">
-                  <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
-                    {product?.title}
-                  </h5>
-
-                  <p className="font-normal mb-3 text-gray-400">
-                    {product?.description}
-                  </p>
-                </div>
-              </div>
+              <ProductCard key={product?.id} product={product} />
             ))
           : "Products  Not Found!"}
       </div>

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image_container {
+  @apply object-center w-full h-full block rounded-lg;
+}
+
+.app_container {
+  @apply container mx-auto p-5 my-40 lg:my-24;
+}

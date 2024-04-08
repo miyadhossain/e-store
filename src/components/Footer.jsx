@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            E-Store
+            <h1 className="text-2xl font-semibold text-primary">E-Store</h1>
             <p className="max-w-xs mt-4 text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               accusantium.

@@ -7,6 +7,8 @@ import HomePage from "./pages/HomePage.jsx";
 import Products from "./pages/Products.jsx";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AboutUs from "./pages/AboutUs.jsx";
+import Faqs from "./pages/Faqs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,22 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Products />
+      </Layout>
+    ),
+  },
+  {
+    path: "/about-us",
+    element: (
+      <Layout>
+        <AboutUs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/faqs",
+    element: (
+      <Layout>
+        <Faqs />
       </Layout>
     ),
   },
