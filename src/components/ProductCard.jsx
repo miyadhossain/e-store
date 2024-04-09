@@ -1,4 +1,5 @@
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import StarRating from "./StarRating";
 
 const ProductCard = ({ product }) => {
   return (
@@ -18,12 +19,16 @@ const ProductCard = ({ product }) => {
 
       <div className="p-5">
         <h5 className="font-bold mb-2 text-white line-clamp-1 capitalize">
-          {product?.id}-{product?.title}
+          {product?.title}
         </h5>
 
-        <p className="font-semibold text-lg mb-3 text-gray-400">
-          ${product?.price}
-        </p>
+        <div className="flex items-center justify-between mb-3">
+          <div className="font-semibold text-lg text-gray-400">
+            ${product?.price}
+          </div>
+
+          <StarRating rating={product?.rating} />
+        </div>
 
         <div className="flex items-center justify-between">
           <button className="bg-white rounded-md px-4 py-0.5 font-semibold text-sm">
