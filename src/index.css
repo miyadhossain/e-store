@@ -11,5 +11,5 @@ body {
 }
 
 .app_container {
-  @apply container mx-auto p-5 my-40 lg:my-24;
+  @apply container mx-auto p-5;
 }

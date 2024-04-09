@@ -19,7 +19,7 @@ const Products = () => {
   );
 
   const handleChange = (event, value) => {
-    setPage(value);
+    setPage(value - 1);
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -51,7 +51,7 @@ const Products = () => {
       <div className="flex justify-center lg:justify-end items-center mt-6">
         <ProductPagination
           count={count}
-          page={page}
+          page={page + 1}
           handleChange={handleChange}
         />
       </div>

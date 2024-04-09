@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <section>
       <Navbar />
       {children}
       <Footer />
-    </div>
+    </section>
   );
 };
 

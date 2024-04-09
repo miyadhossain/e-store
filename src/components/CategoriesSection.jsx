@@ -29,7 +29,9 @@ const categories = [
 const CategoriesSection = () => {
   return (
     <div className="mt-20">
-      <h2 className="text-4xl font-semibold text-center">Shop By Category</h2>
+      <h2 className="text-2xl lg:text-4xl font-semibold text-center">
+        Shop By Category
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
         {categories.map((item) => (

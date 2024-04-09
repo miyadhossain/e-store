@@ -5,7 +5,7 @@ import AppButton from "./AppButton";
 
 const BannersSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-5">
+    <div className="flex flex-col lg:flex-row gap-5 mt-28">
       <div className="w-full lg:w-2/3 relative">
         <img
           className="image_container"

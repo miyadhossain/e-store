@@ -63,27 +63,27 @@ const Faqs = () => {
               id="q&a"
             >
               <Typography>
-                <div className="flex items-center space-x-3">
-                  <div className="flex items-center justify-center min-h-[40px] min-w-[40px] border border-[#E7E7E7] bg-[#F6F6F6]  rounded-full text-[#6B6B6D]">
+                <span className="flex items-center space-x-3">
+                  <span className="flex items-center justify-center min-h-[40px] min-w-[40px] border border-[#E7E7E7] bg-[#F6F6F6]  rounded-full text-[#6B6B6D]">
                     {index + 1}
-                  </div>
-                  <div className="flex flex-col space-y-2">
-                    <h3 className="font-semibold text-sm md:text-base">
+                  </span>
+                  <span className="flex flex-col space-y-2">
+                    <span className="font-semibold text-sm md:text-base">
                       {item?.question}
-                    </h3>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                <div className="flex items-center space-x-3">
-                  <div className="min-w-[40px] min-h-[40px]" />
-                  <div className="flex flex-col space-y-2">
+                <span className="flex items-center space-x-3">
+                  <span className="min-w-[40px] min-h-[40px]" />
+                  <span className="flex flex-col space-y-2">
                     <span className="font-semibold mr-2">Answer:</span>
-                    <div>{item.answer}</div>
-                  </div>
-                </div>
+                    <span>{item.answer}</span>
+                  </span>
+                </span>
               </Typography>
             </AccordionDetails>
           </Accordion>

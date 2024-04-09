@@ -17,7 +17,7 @@ const footerCompanyItems = [
     url: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Career",
     url: "#",
   },
@@ -40,7 +40,7 @@ const footerServicesItems = [
     url: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Order History",
     url: "#",
   },
@@ -101,7 +101,7 @@ const Footer = () => {
             <div className="flex mt-8 space-x-6 text-gray-600">
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -139,7 +139,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
