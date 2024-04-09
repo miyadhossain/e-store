@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
 
       <div className="p-5">
         <h5 className="font-bold mb-2 text-white line-clamp-1 capitalize">
-          {product?.title}
+          {product?.id}-{product?.title}
         </h5>
 
         <p className="font-semibold text-lg mb-3 text-gray-400">

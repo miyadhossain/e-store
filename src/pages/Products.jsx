@@ -9,9 +9,15 @@ const Products = () => {
   const perPage = 12;
   const [page, setPage] = useState(0);
 
+  // Function to calculate skip value based on page number
+  const calculateSkip = (page) => {
+    // Calculate skip value using exponential growth
+    return page === 0 ? 0 : page * perPage;
+  };
+
   const { data: products, isLoading } = useQuery(
     ["allProducts", perPage, page],
-    () => getAllProducts(perPage, page),
+    () => getAllProducts(perPage, calculateSkip(page)),
     {
       keepPreviousData: true,
       refetchOnWindowFocus: false,
@@ -26,7 +32,7 @@ const Products = () => {
     });
   };
 
-  const count = Math.ceil(products?.total / products?.limit);
+  const count = Math.ceil(products?.total / perPage);
 
   useEffect(() => {
     document.title = "Products";
