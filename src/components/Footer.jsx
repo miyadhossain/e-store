@@ -95,7 +95,7 @@ const Footer = () => {
           <div>
             <h1 className="text-2xl font-semibold text-primary">E-Store</h1>
             <p className="max-w-xs mt-4 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              Lorem ipsum dolor sit Amet consectetur adipisicing elit. Voluptas,
               accusantium.
             </p>
             <div className="flex mt-8 space-x-6 text-gray-600">
